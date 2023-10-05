@@ -20,6 +20,6 @@ from django.urls import path, include
 from app.views import TaskListView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
     path("", include("app.urls", namespace="app")),
 ]
